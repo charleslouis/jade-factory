@@ -1,0 +1,22 @@
+.footer {
+  background: $footer-bg none repeat scroll 0% 0%;
+  padding: 24px 0px 10px;
+  color: $footer-color;
+  
+  a {
+    color: $footer-link-color;
+  }
+
+  .link--footer{
+  	margin-left: 1rem;
+  	padding-left: 1rem;
+  	border-left: 0.1rem solid $gainsboro;
+
+  	&:first-child{
+  		margin-right: none;
+  		padding-right: none;
+  		border: none;
+  	}
+  }
+}
+

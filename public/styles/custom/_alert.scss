@@ -1,0 +1,13 @@
+.alert-copied-wrapper{
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+	top: 25vh;
+}
+
+#copied-to-clipboard{
+	position: relative;
+	width: 33%;
+	margin: 0 auto;
+	min-width: 200px;
+}

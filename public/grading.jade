@@ -1,0 +1,42 @@
+extends ../templates/layouts/default
+
+block intro
+	h1 Grading
+
+block content
+	section.abstract
+		p 	Most marks on this course are given for practical work. However, participants should be warned that completion of the assignments is IMPOSSIBLE without a thorough comprehension of the concepts covered in both the classes and the readings.
+		
+
+		table.no-copy
+			thead
+				tr
+					td Date due
+					td Element
+					td Value
+			tbody
+				tr
+					td Midday 2/11/15
+					td 
+						a(href="/assignments/assignment-1-2016/assignment-one.html", target="_blank") Assignment One
+					td 20%
+				tr
+					td Midday
+					td 
+						a(href="/assignments/assignment-2-2016/assignment-two.html", target="_blank") Assignment Two
+					td 25%
+				tr
+					td In Final Week
+					td Final Exam
+					td 30%
+				tr
+					td All the time
+					td Spot quizzes
+					td 20%
+				tr
+					td All the time
+					td In Class Participation
+					td 5%
+
+		p To help you get orientated, previous years quizzes are available 
+			a(href="training.html") here.

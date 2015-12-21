@@ -1,0 +1,39 @@
+extends ../../../templates/layouts/assignment
+
+block intro
+	h1 End User Assignment Two 2015
+	p 
+		strong Due : Monday 7th December 2015, 12:00 hours!
+
+	p
+		strong Design a labor scheduling system for a restaurant complex (two restaurants, one bar) with up to 10 employees. This system should allow each employee’s hours of work for each day of the week to be entered, and will display them graphically as illustrated in the two reports below.  In addition, the system should calculate the information requested. You should take appropriate steps to insure that the spreadsheet template always works by following the principles of good spreadsheet design.
+	hr
+
+block content
+	.columns.medium-8.medium-offset-2
+		section.details
+			h3 Details
+			p From the data entered, the system should be capable of creating a printable report and graph similar to the one shown on the right for each employee.  When an employee is selected, the system should graphically display his / her hours of work for the week, along with the outlet in which they are working at any time.  It should also textually list their hours in numbers on a day by day basis. Lastly, it should tell them how many hours they are working at regular and at overtime rates, and project their earnings for the week.
+			p There are some guidelines that have been negotiated with the employee union that should be followed. Firstly any hours worked over 35 are regarded as overtime, and should be paid at time and a half. Once the employee surpasses this limit in a particular week, their graphical and numeric schedule needs to highlight this in red. Secondly, split shifts are allowed, but their can only be one break in the shift (i.e . the employee can be asked to work in the morning, take a break and come back again after lunch, but then cannot be asked to work again that day).  If they work past midnight, they can only work a single shift the follwoing day. Lastly, employees can only work in a single sales outlet each day - i.e. they cannot be asked to change from working in the bar to working in one of the restaurants during a shift (or in the second part of a split shift).
+
+			figure
+				img(src='img/schedule.gif', alt="Schedule example")
+				figcaption
+					span Schedule
+
+			hr
+
+			p There should also be a report that allows each restaurant unit manager to see which employees are working in their outlet on any specified day in the week. They have agreed on a format something like the one shown on the right.   This report should also calculate the cost of staffing the restaurant on that day. A further report for the week as a whole should present a management report highlighting the number of staff working in each outlet each day, along with the projected labour cost.
+
+			figure
+				img(src='img/detailed-schedule.gif', alt="Detailed schedule example")
+				figcaption
+					span Detailed Schedule
+			hr
+
+		section.required
+			h3 Required
+			p 
+				strong An appropriately designed Excel workbook. The size of this file is strictly limited to 1 Mb (in uncompressed form) so that it can be sent easily by email.  Your file should be saved with your student number as the filename and emailed to 
+				a(href="mailto:charleslouis.allizard@essec.edu") charleslouis.allizard@essec.edu 
+				strong before the due date.  The subject line of your email should be "Assignment Two Submission".

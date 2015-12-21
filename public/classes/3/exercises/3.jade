@@ -1,0 +1,13 @@
+extends ../../../../templates/layouts/exercise
+
+block intro
+	+class-exercises(3,8,3)
+	hs1 Question 3.3
+	h2 A Recipe Costing System
+
+block content
+	p
+		|	Develop a spreadsheet that will help you to calculate the cost of your recipes.
+	ol
+		li This should allow you to enter the ingredients in the recipe, along with the quantity required to produce 10 portions.  The spreadsheet should then find the correct unit price for the product on an alphabetical list of your products in stock, and should perform the calculation to extend the price and calculate the total cost of the recipe.  For simplicity, your recipes should be limited to five ingredients.
+		li Add to the above model by developing it so that it will allow you to enter a number of portions, and it will then calculate the amount of each ingredient required, based on your standard recipe, and also calculate the cost of the required number of portions.

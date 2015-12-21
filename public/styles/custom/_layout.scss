@@ -1,0 +1,23 @@
+.main{
+	margin-top: $topbar-height;
+	padding-top: $topbar-height * 2;
+	padding-bottom: $topbar-height * 2;
+	min-height: 85vh;
+}
+
+.breadcrumbs{
+	position: fixed;
+	z-index: 1200;
+	left: 0;
+	right: 0;
+}
+
+.sub-nav{
+	padding-bottom: .5rem;
+	border-bottom: 1px solid $gainsboro;
+
+	dt{
+		margin-left: 0;
+	}
+
+}

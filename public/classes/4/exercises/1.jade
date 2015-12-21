@@ -1,0 +1,78 @@
+extends ../../../../templates/layouts/exercise
+
+block intro
+	+class-exercises(4,2,1)
+	h1 Question 4.1
+	h2 Spreadsheet Design Questions
+
+block content
+	ol
+		li
+			| Design a spreadsheet that can calculate the selling price of a product from a cost price entered by the user so that it generates a 60% gross profit percentage.  Design the template so that both the cost figure and the profit percentage can be changed.
+		li
+			| Develop the above model so that it will show the selling prices at 5, 10, 15 and 20 percentage points above and below the original profit percentage entered.
+		li
+			| Develop a model that performs that reverse of question 5.1 – i.e. accepts the selling price and the cost price as inputs, and calculates both the gross profit and the gross profit percentage.  Further develop the model so that it will show the profit percentage at a selling price plus or minus 5, 10, 15 or 20% of the original figured entered.
+		li
+			| Develop a model for the third option – accepting the selling price and the profit percentage, and calculating the cost price.
+		li
+			| Develop a spreadsheet that accepts the following list of products, their selling prices and their food costs.  Use the spreadsheet to calculate the profit percentage in each case, and then calculate the average profit percentage.
+			
+			table
+				thead
+					tr
+						td 
+							strong Item 
+						td 
+							strong Cost Price 
+						td 
+							strong Selling Price 
+				tbody
+					tr
+						td Milk
+						td 2.56
+						td 4.00
+					tr
+						td Cheese
+						td 0.80
+						td 2.50
+					tr
+						td Yogurt
+						td 3.02
+						td 5.00
+					tr
+						td Orange Juice
+						td 1.65
+						td 3.00
+					tr
+						td Grapefruit Juice
+						td 1.45
+						td 2.50					
+		li 	
+			| Keeping the answer to the previous question, develop the model further by adding the following data about the number of items sold.  Calculate the revenue and costs from each item.  Then use the total cost and revenue figures to calculate the overall gross profit percentage.  Why is this not the same as the answer to the previous question? Is it right or wrong?  Answers on a postcard to ………
+			table
+				thead
+					tr
+						td 
+							strong Item 
+						td 
+							strong Number sold
+				tbody
+					tr
+						td Milk
+						td 4200
+					tr
+						td Cheese
+						td 100
+					tr
+						td Yogurt
+						td 800
+					tr
+						td Orange Juice
+						td 5600
+					tr
+						td Grapefruit Juice
+						td 2400
+
+
+

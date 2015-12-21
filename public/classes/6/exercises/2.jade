@@ -1,0 +1,19 @@
+extends ../../../../templates/layouts/exercise
+
+block intro
+	+class-exercises(6,3,2)
+	h1 Question 6.2
+	h2 Using Macros in Reality
+	p Design a spreadsheet that calculates the following (Remember the principles of good spreadsheet design!)
+
+block content
+	p Your fast food outlet sells just one product – pizza! The food cost of each pizza is $2.30 and each sells for $5.00. Your fixed costs each year are estimated to be about $250,000. How many pizzas must you sell to break even?
+	ol
+		li Show this calculation on a breakeven chart.
+		li Design a report area that incorporates the initial data, the numeric result and the breakeven chart.
+		li Design a macro that prints this report area on the center of a single portrait sheet of paper (use print preview in class!).
+		li Design a macro that saves the spreadsheet (including any changes).
+		li Design a macro that quits (and saves changes if they haven’t been saved).
+		li Design a macro that erases the original data, thus allowing a user to enter their own figures.
+		li Now the difficult one – design a macro that changes the breakeven chart to increase fixed costs by 10% each time you play it.
+		li Edit the above macro so that it does the reverse – decreases costs by 10% each time you play it.

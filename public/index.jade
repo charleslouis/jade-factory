@@ -1,0 +1,18 @@
+extends ../templates/layouts/default
+
+block intro
+	h1 Classes summary
+
+block content
+	section.row(data-equalizer)
+		//- The following is an array of all the classes abstracts
+		each classAbstract, index in ['Introduction to the course Spreadsheets - Microsoft Excel for Windows Basic calculations, saving, loading and printing spreadsheets.', 'Basic functions, formatting, copying, absolute and relative cell references.  The =If() statement!', 'Date stuff, text functions and even the dreaded nested =if( )s and =Lookup ( ) statements', 'Putting it all together ... The elements of spreadsheet design', 'Graphs and other stuff', 'Introduction to Macros', 'Databases within Spreadsheets, Pivot Tables.  Vlookup and Hlookup', 'Introduction to VBA ... Basic subroutines, branching statements, Input and Output', 'More VBA ... Custom Functions, Events, Methods and Custom Userforms']
+			article.columns.medium-12(data-equalizer-watch)
+				h3= 'Class ' + (index + 1)
+				p= classAbstract
+				a.button.tiny.right(href='/classes/' + (index + 1))='Discover class ' + (index + 1)
+				hr
+		
+		article.columns.medium-12(data-equalizer-watch='')
+			h3 Final examination
+			p In class examination

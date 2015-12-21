@@ -1,0 +1,3 @@
+- copier texte objectives dans classes/1/objectives.jade
+- copier html -> clean Html -> 1.jade pour chaque exercice
+- enregister les PDFs et fichiers de "keypoints" dans classes/1/keypoins

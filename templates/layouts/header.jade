@@ -1,0 +1,30 @@
+//- HEADER
+//- Customise your site's navigation by changing the navLinks Array in ./routes/middleware.js
+//- ... or completely change this header to suit your design.
+.fixed
+	nav.top-bar(data-topbar, role='navigation')
+		ul.title-area
+			li.name
+				h1
+					a(href='/') Home		
+			li.toggle-topbar.menu-icon
+				a(href='#')
+					span Menu
+		section.top-bar-section
+			ul.right
+				li.has-dropdown.not-click
+					a(href="#") Classes
+
+					- var classNumber = 1
+					ul.dropdown
+						while classNumber < 10
+							li
+								a(href='/classes/' + classNumber + '/index.html')='Class ' + classNumber++
+			ul.left
+				li
+					a(href="/syllabus.html") Syllabus
+				li
+					a(href="/grading.html") Grading
+				li
+					a(href="/training.html") Training
+					

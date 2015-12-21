@@ -1,0 +1,21 @@
+extends ../../../../templates/layouts/exercise
+
+block intro
+	+class-exercises(7,5,1)
+	h1 Question 7.1
+	h2 Filtering Data 
+
+block content
+	ol
+		li Open the file called “EPOS” in Excel.
+		li Use Data, Filter, Auto Filter to find all the records whose group is Appetizers.
+		li Use Auto Filter to find a list of all the records whose group is Appetizers and which were served by server 2.
+		li Use Auto Filter to find a list of all the records whose group is Beverage
+		li Use Auto Filter to find a list of all the records whose group is Beverage and which were served by server 4.
+		li By setting appropriate criteria, use Data, Filter, Advanced Filter to list (by filtering in place) all the transactions, which were entered by server 2.
+		li Using the same criteria, copy the answer to a range starting at A120 on your spreadsheet.
+		li Using the same criteria, generate a list starting at A120 that shows JUST the date, product and price of all the transactions served by server 3.
+		li Change the “Copy to” range to whatever you want, and list all the transactions that were entered by server 1.
+		li Change the “Copy to” range, and list all the transactions that were entered by server 1 or 2.
+		li Change the “Copy to” range to a range on a separate sheet.  Does it work?
+		li On any one of your answers, if  you change some of the original data, does the data in the extracted range change? Why?

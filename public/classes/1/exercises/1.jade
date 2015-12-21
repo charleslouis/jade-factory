@@ -1,0 +1,91 @@
+extends ../../../../templates/layouts/exercise
+
+
+block intro
+	+class-exercises(1,6,1)
+	
+	h1 Question 1
+	p
+		|	Shown below are the departmental revenue figures for The Heather Hotel for last Monday. Using a spreadsheet, calculate the total revenue for the day. Save the spreadsheet as "Monrev".
+
+block content
+	table
+		thead
+			tr
+				td Monday
+				td
+		tbody
+			tr
+				td Accommodation
+				td 19,560
+			tr
+				td Food
+				td 4,856
+			tr
+				td Beverage
+				td 3,950
+			tr
+				td Sundries
+				td 807
+	p
+		|	Revenue figures for the remainder of the week are shown below.
+		br
+		|	 (Note that the figures for Monday are the same as in the above question.
+	table(border='0', cellspacing='0', cellpadding='0')
+		thead
+			tr
+				td Mon
+				td Tue
+				td Wed
+				td Thir
+				td Fri
+				td Sat
+				td Sun
+				td
+		tbody
+
+			tr
+				td Accomm.
+				td 19,560
+				td 18,340
+				td 11,345
+				td 14,980
+				td 17,120
+				td 8,340
+				td 4,510
+			tr
+				td Food
+				td 4,856
+				td 4,585
+				td 2,836
+				td 3,745
+				td 4,280
+				td 2,085
+				td 1,128
+			tr
+				td Beverage
+				td 3,950
+				td 1,559
+				td 1,290
+				td 1,273
+				td 1,455
+				td 709
+				td 383
+			tr
+				td Sundries
+				td 807
+				td 624
+				td 516
+				td 509
+				td 274
+				td 284
+				td 153
+			tr
+			tr
+				td Total
+	ol
+		li Calculate the total revenue for each day.
+		li Calculate total sales for each department and overall sales for the week
+		li Calculate the average revenue per day.
+		li Value Added Tax (VAT) is included in all prices at 8%. Calculate the net (i.e. without tax) revenue for the hotel
+		li Save the spreadsheet as Weekrev

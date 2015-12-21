@@ -1,0 +1,20 @@
+extends ../../../../templates/layouts/quiz
+
+block intro
+	+quiz-intro('One', 'F', '1')
+
+block content
+	h4 You are the manager of an Internet Café who wishes to develop an Excel application to help with client billing.   Create an Excel work sheet that provides the following functionality.
+
+	ul
+		li Using the customer’s start time and end time, calculate the time spent online. Note that the café is open 24 hours per day, so when the end time is lower than the start time, the system should presume that the customer has been using the facilities overnight and should make appropriate adjustments to calculate the correct time. Appropriate checks should be included to prevent the entry of invalid data.
+
+		li Internet access is billed by the minute.  Where the customer uses less than 60 minutes, the charge is 6 cents per minute.  Where they use between one hour and three hours, the charge is 4 cents per minute and where they use more than three hours, the charge is 3 cents per minute.  Thus someone who used three hours and three minutes would pay 183 minutes multiplied by 3 cents.
+
+		li Rentals that are less than one hour should automatically be coloured green, where they are one hour or more, they should be automatically coloured red.
+
+		li A special discount of 20% is given if the rental starts on a Saturday or Sunday.
+
+		li Extra charges are levied for printing.  Up to five pages costs 10 cents per page, printing five pages or more costs 8 cents per page.
+
+		li The system should only allow the user to enter the customer’s start date, start time, end time and number of pages printed, and should then calculate the total amount due.  This should be rounded upwards to the nearest 10 cents (so for example a total of 1.23 should be rounded to 1.30, one of 0.77 should be rounded to 0.80).

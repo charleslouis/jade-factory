@@ -1,0 +1,23 @@
+extends ../../../../templates/layouts/quiz
+
+block intro
+	+quiz-intro('One', 'C', '2')
+
+block content
+	h4 Design a spreadsheet that helps calculate the cost of a car rental.  This should allow the user to enter the date of the hire and the date of return, the type of car (see below) and the number of miles used, and should calculate the requested information automatically.
+
+	h4 Appropriate checks should be included to prevent the entry of invalid data.
+
+	ul
+		li Calculate the length of the rental (in days).  Note that if the car is hired and returned on the same day, the rental length should be one day.
+
+		li Economy cars cost 30 Euros per day, and Luxury cars cost 50 Euros.  
+		Calculate the cost of hiring the car chosen.
+
+		li Mileage is charged in blocks of 100 miles, with an additional cost of 5 Euros per 100 mile block.
+
+		li A discount of 10% on the total cost (rental plus mileage) if the rental BEGINS on a Friday or Saturday.
+
+		li Calculate the total charge for the rental and the cost per mile considering all of the above issues.
+
+		li Where the cost per mile exceeds 0.10 cents, that cell should be automatically highlighted in Blue.

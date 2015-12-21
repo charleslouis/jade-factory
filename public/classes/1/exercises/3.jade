@@ -1,0 +1,49 @@
+extends ../../../../templates/layouts/exercise
+
+block intro
+	+class-exercises(1,6,3)
+	h1 Question 1.3
+	
+	p Shown below is some revenue and cost information for the Ivy bar and restaurant. Overheads are to be apportioned equally to food and beverage.
+
+block content
+	div
+		table(border='0')
+			tbody
+				tr
+					td 
+						strong Sales
+					td Food 
+					td Beverage
+						
+				tr
+					td
+					td 18,970
+					td  5,600
+
+				tr
+					td 
+						strong Purchases
+					td Food 
+					td Beverage
+				tr
+					td
+					td 7120
+					td 2450
+
+				tr
+					td 
+						strong Overhead
+				tr
+					td 2600
+					td
+					td
+
+	ol
+		li Calculate food revenue and beverage revenue as a percentage of total revenue.
+		li Calculate the food cost percentage and the beverage cost percentage.
+		li
+		| Calculate the food gross profit percentage and the beverage gross profit percentage.
+		li
+		| Calculate the food net (after overheads) profit percentage and the beverage net profit percentage.
+		li Save the spreadsheet as Weekgp			

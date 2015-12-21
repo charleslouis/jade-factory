@@ -1,0 +1,41 @@
+extends ../../../templates/layouts/exam
+
+block intro
+	+exam-intro('A')
+
+block content
+	p Create a database suitable for storing room reservations for your hotel.This should record the arrival date and departure date for each booking, along with the name of the guest and the type of room requested (note each record in your database should be only for one room). 
+	p The database should also automatically calculate the rate quoted based on the following :
+
+	table
+		thead
+			tr
+				td 
+				td(colspan='2') Rate per night base
+			tr
+				td
+				td  Less than 5 nights
+				td 5 or more nights
+		tbody
+			tr
+				td Single
+				td 50
+				td 40
+			tr
+				td Double
+				td 90
+				td 75
+			tr
+				td Twin
+				td 90
+				td 80
+	p In addition, your user wishes you to :
+
+	ul
+		li Design a button that will sort the list so that the closest reservations are displayed first. 
+
+		li Design a button that will filter the list so that only reservations for tomorrow are shown. 
+
+		li Using appropriate formulae, calculate the average lead time – the difference between the current date and the start of each reservation. 
+
+		li Design a custom user form to allow reservations to be entered.  This should verify that the departure date is always after the arrival date, and that the room type is one of the ones specified in the above table.   The form should also have OK and Cancel buttons that work appropriately.  This user form should be displayed automatically whenever the user selects the sheet containing the reservations database, and when ever a button marked “Enter Deliveries” is pressed.

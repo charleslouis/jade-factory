@@ -1,0 +1,16 @@
+extends ../../../../templates/layouts/quiz
+
+block intro
+	+quiz-intro('Two', 'E', '1')
+
+block content
+	ul
+		li Create a macro that sorts the database so that those alumni who make the most money are shown at the top of the list.  If two people have the same salary, they should be sorted alphabetically from A to Z by their family name.  Assign this to the button marked “Sort” (1 mark). 
+
+		li Create a macro that filters the database (in the same location) so that only those whose family name begins with “M” are showing.  Create another macro that only shows those whose family name does not being with “M”.  Lastly, create a third macro that returns the database to its original state.  Assign these to the relevant buttons (3 marks). 
+
+		li Create a macro that copies the name, company and country of location (and only this data) of all the alumni who graduated before 2000 to the range of cells beginning at cell H350.  Assign this to the “2000” button (2 marks). 
+
+		li Create a macro that filters the database (in the same location) so that the five alumni who have the highest salary are shown. Assign this to the “Top performers” button (2 marks). 
+
+		li In cell E3, calculate the number of alumni who are members of whatever class is entered into cell E2 (2 marks).

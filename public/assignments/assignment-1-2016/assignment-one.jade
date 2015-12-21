@@ -1,0 +1,146 @@
+extends ../../../templates/layouts/default
+
+block intro
+	h1 End User Assignment One 2015
+	p 
+		strong Note that any questions about the substance of the assignment should either be asked in class or be emailed to me.  The responses will be circulated by email, so you should check your messages regularly to see what clarifications other people have received.
+
+block content
+	section.abstract
+		p You are required to develop a spreadsheet capable of processing the payroll and taxation calculations for Fred's Hotel. This system should calculate each employee’s gross wages, taxation due and net wages for a single week (Monday to Sunday), and must also provide the summary management information detailed below.
+	
+		hr
+		p 
+			strong The system must take each of the following factors into account : 
+
+		ul
+			li The hotel can have a maximum of fifteen employees in any week. The system therefore should be capable of processing payroll for any number between one and fifteen people.
+			li The system should allow the person calculating the payroll to enter the starting and ending time of each employee for each day for the we ek.  Employees can only work straight shifts - i.e. they must work for a continuous period of time each day, and can only work one shift per day. 
+			li Each employee can work up to five days per week but not more than this.  Employees cannot work past Midnight.  If they work overnight, their working hours must be entered as two shifts (on two seperate days).  As a result, they cannot work again on the second day.
+			li Each employee is paid an hourly rate based on their department.   Front Office are paid 10 Euros per hour, F&B are paid 8 Euros per hour, Housekeeping are paid 7 Euros per hour and all others are paid 6.50 Euros per hour.
+			li There are three levels of positions.   Workers receive the basic wage detailed above.  Supervisors receive 1.25 times the hourly wage of their workers, and Managers receive 1.5 times the hourly wage of their workers.  Therefore a Front Office Manager would receive 10 * 1.5 = 15 Euros per hour.
+			li The standard working week is 37 hours. Any employees working more than this are paid overtime.   Hours above 37 and below 40 are paid at one and a quarter times the employee's normal rate. Forty or more hours per week are paid at one and a half  times the normal rate.
+			li Any hours worked on a Sunday must be paid at double time.
+			li Allow a space on the worksheet for the entry of the hotel ’s weekly F&B sales figure. 5% of this should be distributed to the workers in the F&B department (but not the managers or supervisors) as service charge based on the number of hours that each F&B worker has worked. For example, if a particular worker has worked 30 hours in a week, and the total number of hours worked by all F&B workers was 300, then that worker should receive one tenth (300 divided by 30) of the service charge for that week.
+			li Managers receive a bonus as follows:   if the hotel occupancy EACH day is less than 50%, they receive nothing; where it is between 50% and 70%, they receive 0.05% of sales; where it is between 70% and 90%, they receive 0.065% of sales, and where it is 90% or over, they get 0.085%.  In all cases, the total bonus amount should be split equally between all the managers (if they worked at all that week, even for a single minute, then they receive an equal share).  Note however that the lowest occupancy in a week that determines the bonus.  So if occupancy is as follows during the week 89%, 82%,77%, 90%, 76%, 71%, 52% - they only receive a bonus of only 0.05%.
+			li Managers  receive a additional bonus of  Euro 200 each if the worker (i.e. non-supervisor and non-management) labour cost percentage is below 20% of sales.
+
+		hr
+		p 
+			strong Taxation information is as follows
+
+		p Fred's Hotel is located in a country that uses the PAYE (Pay As You Earn) system of income tax. As a result, the employer must calculate and deduct both income tax and social charges from each employee’s income and submit them to the collector of taxes.
+
+		p All employees are presumed work 52 weeks per year, and thus their tax-free allowances can be distributed equally through out the year using this number.
+		
+		p Annual figures are shown in the tables below.
+
+		table
+			thead
+				tr
+					td(colspan="3") Tax Free Allowance
+			tbody
+				tr
+					td Single
+					td 4000
+				tr
+					td Married
+					td 7500
+				tr
+					td Divorced / Widowed
+					td 5500
+
+		p Employees also receive an additional tax free allowance of 800 per dependent child.
+
+		table
+			thead
+				tr 
+					td(colspan="3") Income Tax Rates (on TAXABLE income)
+				tr
+					td Rate
+					td Single
+					td Married
+			tbody
+				tr
+					td 25%
+					td Up to 8000
+					td Up to 16,500
+				tr
+					td 37% 
+					td Income of between 8000 and 13,000
+					td Income of 16,500 and 25,000
+				tr
+					td 43%
+					td Income of between 13,000 and 30,000
+					td Income of between 25,000 and 55,000
+				tr
+					td 50% 
+					td Income over 30,000
+					td Income over 55,000
+
+
+		p (Note: The income tax rates for divorced and widowed is the same as for married employees).
+
+		table
+			thead
+				tr 
+					td(colspan="2") Social Charges Rates (on ALL income)
+				tr
+					td Rate
+					td Limit
+			tbody
+				tr
+					td 5.5%
+					td Up to 40,000
+				tr
+					td 3.5%
+					td Between 40,000 and 60,000
+				tr
+					td 2.5%
+					td 60,000 and over
+
+		p When calculating both income tax and social charges, the second rate is only applied to the income above the cut off point. So, for example, a single person with an income of 15,000 per annum would pay 25% of the first 8000 and 37% of the remaining 3000 (15,000-4000) in income tax, as well as 5.5% of the 15,000  in social charges.
+
+		p Your spreadsheet should present an easily understandable outline showing who has worked or not worked each day, along with all of the requested income and tax calculations.
+
+		hr
+		p The following management information must also be available on a 
+			strong separate single printable page :
+
+		ul
+			li Total Gross Wages, broken down by workers, supervisors and managers.
+			li Total Overtime (in currency), broken down by workers, supervisors and managers.
+			li Total Overtime (in hours and minutes), broken down by workers, supervisors and managers.
+			li Total Net Wages, broken down by workers, supervisors and managers.
+			li Number of people who worked overtime, broken down by workers, supervisors and managers.
+			li Total Income Tax collected this week.
+			li Total Social Charges collected this week.
+			li Gross Wages excluding service, bonuses etc as a percentage of sales.
+			li Gross Wages including service, bonuses etc as a percentage of sales.
+			li Average Gross Wage (excluding overtime, service and bonuses), broken down by workers, supervisors and managers.
+			li Average Gross Wage (including overtime, services and bonuses), broken down by workers, supervisors and managers.
+			li Average Net Wage, broken down by workers, supervisors and managers.
+			li Highest Net Wage.
+			li Lowest Net Wage.
+
+		p On a single printable page means that if you select "File", "Print" and click "OK", the page (and just the page, will print with no further action on the part of the user!  The printout should  include the title "Fred's Hotel – Labour Cost Report" and display both the date of printing and your own name in the bottom right hand corner of the page.
+
+		hr
+	
+	section.required
+		h3 Required
+		ul
+			li 
+				strong A VIRUS FREE file containing ONLY the completed Excel workbook. This should be saved with your student number as the filename.  Data for each employee's hours worked and demographic data should be empty, as if the spreadsheet was being used for the first time. 
+			li 
+				strong An electronic PDF printout of your spreadsheet formulas.  It is your responsibility to ensure that this readable, as this is effectively what will be used for grading purposes.  
+			li 
+				strong This two files should be emailed to 
+				a(href="mailto:charleslouis.allizard@essec.edu") charleslouis.allizard@essec.edu 
+				strong before the submission date / time. 
+			li 
+				strong Your email's subject line must contain only the words "End User Assignment One 2015" in order for your submission to be automatically acknowledged (obviously do not include the quotation marks and please do not use any other subject line).
+			li 
+				strong You should copy yourself on the email to make sure that it is sent successfully.
+			li 
+				strong Please do submit your assignments in any other way, or submit them from an email address other than the one you normally use.

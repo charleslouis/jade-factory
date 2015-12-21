@@ -1,0 +1,54 @@
+extends ../../../../templates/layouts/exercise
+
+block intro
+	+class-exercises(2,8,4)
+	h1 Question 2.4
+	p
+		|	Shown below is a stock sheet from the Ivy Restaurant (the data for this questions is in the online resources sections).
+
+block content
+	ol
+		li 	Use appropriate formulae to calculate the value of each stock item held and the total value of all items on the page.
+
+		li The re-order level of each stock item is also shown on the sheet.  Use an appropriate formula to highlight those products which need to be re-ordered.
+	table
+		thead
+			tr
+				td Shelf Number
+				td Description
+				td Size
+				td ReOrder Level
+				td Unit Value
+				td Quantity
+				td Value
+		tbody
+			tr
+				td 567
+				td Heinz Baked Beans
+				td 450g
+				td 30
+				td 0,27
+				td 45
+			tr
+				td 568
+				td Heinz Baked Beans
+				td 900g
+				td 30
+				td 0,51
+				td 17
+			tr
+				td 569
+				td Heinz Baked Beans
+				td 2000g
+				td 10
+				td 1,10
+				td 3
+			tr
+				td 570
+				td Batchelor's Beans
+				td 450g
+				td 30
+				td 0,28
+				td 32
+			tr
+				td Total

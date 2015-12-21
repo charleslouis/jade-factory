@@ -1,0 +1,27 @@
+extends ../../../templates/layouts/exam
+
+block intro
+	+exam-intro('G')
+
+block content
+
+	p Create a flat file database to record certain details about employees in your hotel.  For each employee, it should record their surname, first name, date of birth, sex and annual salary.   Once a record is entered, it should automatically be coloured blue if the employee is male and pink if the employee is female.
+	
+	p Your database should have appropriate field names and you should enter data for three or four employees to make sure that it works properly.
+	
+	p In addition, your user wishes you to:
+
+	ul
+		li Design a button (including a macro / VBA) that will sort the database so that records with the highest salary are shown first.  If salaries for two or more employees are the same, within this subgroup, records should be sorted by surname, and then by first name.
+
+		li Design a button (including a macro / VBA) that allows the user to just display records for employees whose salary is less than whatever figure is entered into cell a10 of sheet 1.
+
+		li Design a button or buttons (including a macro / VBA) that will display only records of employees born prior to 1970.
+
+		li On Sheet3, prepare a column chart that showing the average salary of employees broken down by sex.  Thus your graph should have two columns – one for male and one for female, each representing the average salary for employees of that gender in the database. 
+
+		li Create a custom function called = monthlysalary( ). This should divide the annual salary figure by 12 to tell you how much someone earns per month. Demonstrate how to use this new function in the range A1 to A5 of sheet4.
+
+		li When ever sheet 3 is activated, a message box should be displayed telling the user that they should not change anything on this sheet. 
+
+		li Create a button that displays a custom Userform that allows data to be entered into the database.  This should have OK and Cancel buttons that work appropriately, as well as verify that a date is entered for the date of birth field and numbers are entered for the salary field.  Place a command button on sheet 1 to open this Userform.

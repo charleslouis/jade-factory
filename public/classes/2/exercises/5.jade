@@ -1,0 +1,50 @@
+extends ../../../../templates/layouts/exercise
+
+block intro
+	+class-exercises(2,8,5)
+	h1 Question 2.5
+	
+	p Shown below is some payroll information for The Ivy Restaurant.
+
+block content
+	table
+		thead
+			tr
+				td Employee Name
+				td Pay Rate
+				td Hours Worked
+		tbody
+			tr
+				td Fred Bloggs
+				td 2.50
+				td 43
+			tr
+				td Mary White
+				td 2.50
+				td 39
+			tr
+				td George Black
+				td 3.20
+				td 40
+			tr
+				td Scarlett Green
+				td 3.00
+			tr
+				td Sally Field
+				td 2.50
+				td 41
+			tr
+				td Wendy James
+				td 2.70
+				td 19
+
+	ol
+		li Calculate each employee’s total wage.
+		li Calculate the hotel’s total wage bill.
+		li Calculate the number of employee’s who have worked in the week shown above (i.e. they have a number entered in the table above).
+		li Calculate the average wage paid to an employee.
+		li Calculate both the highest and lowest total wage.
+
+	p The restaurant’s sales for the week were $19,500.  Service charge of 12 1/2 percent must be distributed equally among all the employees (Assume, at this stage, that the people who did not work during the week still get paid the service).  Calculate each person’s share of the service, and calculate the amount that each will receive in their wage packet on that week.							
+
+

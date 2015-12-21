@@ -1,0 +1,17 @@
+extends ../../../templates/layouts/class-main.jade
+
+block intro
+	h1 Class 7
+	p The seventh session introduces the concept of databases.  Although there are dedicated programs which can be used to manipulate databases (such as Microsoft Access), Excel includes powerful database features and functions.
+	p Database features can be used to sort or extract specific data from the database.  There are two forms - Autofilter and Advanced Filter, each of which has its own advantages and limitations.  Databases functions work like normal functions, but only on the data in the database that conforms to certain criteria.
+	p Lastly, the use of Pivot Tables will be addressed.
+
+
+block exercises-links
+	+exercises-buttons(7,5)
+
+block keypoints-links
+	ul.unstyled
+		li: a(href="keypoints/keypoints_q_7-EPOS.xls", target="_blank", class="reading-label") keypoints EPOS example
+		li: a(href="keypoints/keypoints_q_7-macro.xls", target="_blank", class="reading-label") keypoints Macro example
+		li: a(href="keypoints/keypoints_q_7-5.xls", target="_blank", class="reading-label") keypoints 7.5

@@ -1,0 +1,29 @@
+extends ../../../../templates/layouts/quiz
+
+block intro
+	+quiz-intro('One', 'D', '2')
+
+block content
+	h4 You wish to design a system to calculate the revenue that will be gained from conference reservations in your hotel.
+
+	h4 This should allow the user to enter the arrival date and departure date of each conference, and should calculate the length of the conference in days.
+
+	ul
+		li The room rate depends on when the conference starts (i.e. the date of arrival).   For conferences with a date of arrival in January, February, March or September, the rate is Euro 50 per room per night.  For conferences that start in April, May, June, July or August, it is Euro 75 per room per night, and for those that start in October, November or December, it is Euro 45 per room per night.
+
+		li The user also has to enter the proposed number of participants so that the system can calculate the number of rooms required.  All rooms accommodate two people and participants must share rooms where possible.
+
+		li A discount of 5% is given if the total number of room nights (i.e. the number of rooms required per night multiplied by the number of nights) exceeds 500.
+
+		li For any possible conference, calculate the potential revenue.
+
+		li When the total revenue is less than Euro 5000, please automatically highlight the entire calculation in blue.
+
+	hr
+	ul
+		li Dates – difference in days (1)
+		li Nested If statement (2)
+		li Calculation (1)
+		li Roundup (1) 
+		li Conditional formatting (2)
+		li Discount (2)

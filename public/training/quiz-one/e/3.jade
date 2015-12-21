@@ -1,0 +1,22 @@
+extends ../../../../templates/layouts/quiz
+
+block intro
+	+quiz-intro('One', 'E', '3')
+
+block content
+	h4 Design a spreadsheet that helps calculate the cost of a car rental.  This should allow the user to enter the date and pickup time and the date and drop-back time, the type of car (see below) and the number of miles used, and should calculate the requested information automatically.
+
+	h4 Appropriate checks should be included to prevent the entry of invalid data.
+
+	ul
+		li Calculate the length of the rental in hours.  Note that once an hour starts, it is counted as a full hour.  So 59 minutes is one hour, but 61 minutes is two hours. 
+
+		li You only rent one type of car, but the price varies based on the month in which the rental starts.  If it starts in January, February March, and April, a car costs 30 Euros per day, in September and December, it costs 40 Euros per day and the rest of the time it cost 35 Euros per day.  As above, once a 24 hour period starts, it is counted as a full day. 
+
+		li Mileage is charged in blocks of 5 miles, with an additional cost of 0.20 Euros per 10 mile block. 
+
+		li A discount of 10% on the total cost (rental plus mileage) if the rental starts on a Friday or Saturday. 
+
+		li Calculate the total charge for the rental and the cost per mile (i.e. the total cost divided by the number of miles) considering all of the above issues.   
+
+		li Where a discount is being applied, the entire reservation should automatically be highlighted in Blue.

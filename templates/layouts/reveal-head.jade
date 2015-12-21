@@ -1,0 +1,27 @@
+//- HEADER
+meta(charset='utf-8')
+title Excel 2016
+meta(name='description', content='A framework for easily creating beautiful presentations using HTML')
+meta(name='author', content='Hakim El Hattab')
+meta(name='apple-mobile-web-app-capable', content='yes')
+meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
+meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui')
+
+link(rel='stylesheet', href='../../reveal/css/reveal.css')
+link#theme(rel='stylesheet', href='../../reveal/css/theme/black.css')
+link(rel='stylesheet', href='../../reveal/lib/css/zenburn.css')
+
+//- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+//- Safely remove this block if you are not targeting IE8
+//-[if lt IE 9]
+	script(src="//cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.js")
+	script(src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js")
+//-[endif]
+
+//- Include template-specific stylesheets by extending the css block
+script.
+	var link = document.createElement( 'link' )
+	link.rel = 'stylesheet'
+	link.type = 'text/css'
+	link.href = window.location.search.match( /print-pdf/gi ) ? '../../reveal/css/print/pdf.css' : '../../reveal/css/print/paper.css'
+	document.getElementsByTagName( 'head' )[0].appendChild( link )

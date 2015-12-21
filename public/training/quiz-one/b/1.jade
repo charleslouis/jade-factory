@@ -1,0 +1,22 @@
+extends ../../../../templates/layouts/quiz
+
+block intro
+	+quiz-intro('One', 'B', '1')
+
+block content
+	h4 Design a spreadsheet that allows you to enter the names, sexes, dates of birth and annual incomes of up to five employees.
+
+	h4 Set up the spreadsheet so that it :
+
+	ul
+		li Calculates the age of the each employee in years.
+		
+		li Calculates the number of days age difference between the oldest and the youngest employee.
+		
+		li Calculates the monthly income of each employee, but rounded up to the nearest 100. So where the income is $1875, the answer should be $1900, and where the total is $1840, it should still be $1900.
+		
+		li Indicates whether a person is active or retired. Males over 65 and females over 62 are regarded as retired, which should be indicated by writing retired next to their name.
+
+		li Calculates the average annual income of all the people who are not retired.
+
+		li Highlight, using BLUE, the names of everyone who is not retired, and using GREEN, the names of everyone who is retired.

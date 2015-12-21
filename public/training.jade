@@ -1,0 +1,53 @@
+extends ../templates/layouts/default
+
+block intro
+	h1 Training
+
+block content
+	section.abstract
+		p To help you get orientated, previous years quizzes are available here. For the quizzes and exam, there were multiple versions at the same standard, and the one shown below is for illustration only.
+
+		table.no-copy
+			thead
+				tr
+					td(colspan='4') Quiz One
+			tbody
+				each letterQuiz, index in ['A','B','C','D','E','F']
+					tr
+						td= 'Quiz one ' + letterQuiz
+						- var quizVersion = 1
+						- var letter = letterQuiz.toLowerCase()
+						while (quizVersion < 4)
+							td
+								a(href="training/quiz-one/" + letter + "/" + quizVersion + ".html")='version ' + quizVersion++
+
+
+		table.no-copy
+			thead
+				tr
+					td(colspan='5') Quiz Two
+			tbody
+				each letterQuiz, index in ['A','B','C','D','E']
+					tr
+						td= 'Quiz two ' + letterQuiz
+						- var quizVersion = 1
+						- var letter = letterQuiz.toLowerCase()
+						while (quizVersion < 3)
+							td
+								a(href="training/quiz-two/" + letter + "/" + quizVersion + ".html")='version ' + quizVersion++
+						- var quizVersion = 1
+						- var letter = letterQuiz.toLowerCase()
+						while (quizVersion < 3)
+							td
+								a(href="training/quiz-two/data/quiz-two-" + letter + quizVersion + "-data.xls")='data version ' + quizVersion++
+		
+		table.no-copy
+			thead
+				tr
+					td Final Exams
+			tbody
+				each letterExam in ['A','B','C','D','E','F','G']
+					- var letter = letterExam.toLowerCase()
+					tr
+						td
+							a(href="training/exams/" + letter + ".html")='Final Exam ' + letterExam

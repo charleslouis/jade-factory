@@ -1,0 +1,23 @@
+extends ../../../../templates/layouts/exercise
+
+block intro
+	+class-exercises(2,8,8)
+	h1 Question 2.8
+	p Type your name into cell A1 of a spreadsheet in the format `Title + (SPACE) + Firstname + (SPACE) + Surname`
+
+block content
+	p Use appropriate functions to separate this one long entry into cells as follows:
+	table 
+		tbody
+			tr
+				td Title
+				td B3
+			tr
+				td Firstname
+				td B4
+			tr
+				td Surname
+				td B5
+	ol
+		li Initially assume that all parts of the name must be entered.  Each element of the name can be of variable length but must be present.
+		li Now assume that the first name may or not be omitted.  In another set of cells, use appropriate formulae to separate the elements of the string.

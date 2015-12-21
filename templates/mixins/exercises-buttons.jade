@@ -1,0 +1,9 @@
+mixin exercises-buttons(classNumber, numberOfExercises)
+	if classNumber && numberOfExercises
+		ul.button-group
+			- var index = 1
+			while (index <=  numberOfExercises)
+				li
+					a(href="exercises/" + index + ".html", class="button primary")='Exercise ' + classNumber + '.' + index++
+	else
+		p No Exercise for this class

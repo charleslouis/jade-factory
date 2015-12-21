@@ -1,0 +1,24 @@
+{
+  "name": "excel2016",
+  "description": "Excel 2016 Bower.json",
+  "main": "",
+  "authors": [
+    "Charles-Louis Allizard"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/charleslouis/excel2015",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "foundation": "~5.5.3"
+  },
+  "dependencies": {
+    "clipboard": "~1.5.5"
+  }
+}

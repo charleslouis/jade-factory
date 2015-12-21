@@ -1,0 +1,23 @@
+.unstyled{
+	list-style-type: none;
+	margin-left: 0;  
+}
+
+.text-center{
+  text-align: center;
+}
+
+.reading-label {
+  @include label(
+    // This options sets label padding
+    $padding: 0.5em 2em,
+    // This option sets label text-size
+    $text-size: 1rem,
+    // This option sets label background-color
+    $bg: rgba($primary-color, 0.8),
+    // This option sets the radius of the label
+    $radius:0
+  );
+  margin-bottom: 1em;
+  min-width: 66%
+}

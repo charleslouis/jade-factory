@@ -1,0 +1,56 @@
+extends ../../../../templates/layouts/exercise
+
+block intro
+	+class-exercises(3,8,5)
+	h1 Question 3.5
+	h2 More Lookups!
+
+block content
+	p
+		|	The new American tax rates are as follows :
+		
+	table
+		thead
+			tr
+				td Income per week
+				td Tax Rate
+		tbody
+			tr
+				td Up to 100
+			tr
+				td From 100 to 200
+				td 20%
+			tr
+				td From 200 to 400
+				td 23%
+			tr
+				td From 400 to 600
+				td 30%
+			tr
+				td Over 600
+				td 40%
+
+	p
+		|	Calculate the net pay of the following five people :
+
+	table
+		thead
+			tr
+				td Monthly Income
+				td
+		tbody
+			tr
+				td A
+				td $4270
+			tr
+				td B
+				td $3016
+			tr
+				td C
+				td $2072
+			tr
+				td D
+				td $1000
+			tr
+				td E
+				td $3000

@@ -1,0 +1,24 @@
+extends ../../../../templates/layouts/quiz
+
+block intro
+	+quiz-intro('One', 'B', '3')
+
+
+block content
+
+	h4 Design a spreadsheet that allows you to calculate the price to be quoted to anyone wanting to make a group booking at your hotel.
+
+	h4 Set up the spreadsheet so that it :
+
+	ul
+		li Calculates the length of stay of the group in days.
+
+		li All of your rooms sleep two people; calculate the number of rooms required.
+
+		li The rate per room they are charged depends on the season. In Spring the rate is $50, in Summer it is $75, in Autumn it is $60 and in Winter it is $40.Calculates the rate that each group should be charged.
+
+		li Because business is bad, an extra discount of 5% is given if the booking commences in 2004. Calculate this discount and the total adjusted amount they should be charged.
+
+		li Using spreadsheet features, highlight in GREEN any bookings that commence in the current year, and in BLUE any commencing next year.
+
+		li Calculate the average revenue from groups whose stays commence in December 2004

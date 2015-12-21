@@ -1,0 +1,17 @@
+extends ../../../../templates/layouts/quiz
+
+block intro
+	+quiz-intro('Two', 'E', '2')
+
+block content
+	ul
+
+		li Create a macro that displays the default Excel form which allows a user to enter, modify and delete data from the database. Assign this to the button marked “Form” (1 mark).  
+
+		li Create a macro that sorts the database by country of residence.  If two people have the same country of residence, they should be sorted alphabetically from A to Z by their family name.  Assign this to the button marked “Sort” (2 marks).
+
+		li Create a macro that filters the database (in the same location) so that only those people born in January, February or March are showing.  Create another macro that only shows those who were born in other months.  Lastly, create a third macro that returns the database to its original state.  Assign these to the relevant buttons (3 marks). 
+
+		li Create a macro that copies the name, sex and date of birth (and only this data) of all the Males born before 1995 to the range of cells beginning at cell H350. Assign this to the “Older Men” button (2 marks). 
+
+		li In cell E3, calculate the number of people born in whatever year is entered into cell E2 (2 marks).

@@ -1,0 +1,16 @@
+extends ../../../../templates/layouts/quiz
+
+block intro
+	+quiz-intro('Two', 'D', '2')
+
+block content
+	ul
+		li Create a macro that sorts the database so that the alumni who graduated first are shown at the top of the list, and those who graduated most recently are shown at the bottom.  Within each class, they should be sorted alphabetically from A to Z by their surname, and if they have the same surname, by first name. Assign this to the button marked “Sort” (1 mark). 
+
+		li Create a macro that filters the database (in the same location) so that only the alumni who work in Hotels are showing.  Create another that only shows those that are do not work in Hotels.  Create a third that returns the database to its original state.  Assign these to the relevant buttons (2 marks). 
+
+		li Create a macro that copies the first name, surname and company (and only this data) of all the alumni who are based in the USA to the range of cells beginning at cell A3 on Sheet2.  Assign this to the “US Members” button (3 marks). 
+
+		li Create a macro that filters the database (in the same location) so that only alumni who are Members and who work for some part of Accor are shown. Assign this to the “Accor” button (2 marks). 
+
+		li In cell E3, calculate the number of alumni who are located in whatever country is entered into cell E2 and are also members (2 marks).

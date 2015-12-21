@@ -1,0 +1,16 @@
+extends ../../../../templates/layouts/quiz
+
+block intro
+	+quiz-intro('Two', 'B', '1')
+
+block content
+	ul
+		li Design a macro that sorts the database so that those who performed best (i.e. have the highest total mark) are shown first.  If two people have the same total mark, then they should be sorted by surname in ascending order. Assign this to the button marked “Sort”. (2 marks)
+
+		li Design a macro that filters the list in place so that only those who passed (achieved a total mark of 60 or more) are shown.  Design a second macro that shows those who failed.  Assign these macros to the relevant buttons. (2 marks)
+
+		li Design a macro that copies the surname, first name and exam result of all the males have failed the final exam to the range beginning at A30.  Assign this to the Exam Follow-Up button. (2 marks)
+
+		li Create a macro that filters the list in place so that anyone who failed either quiz 1 or quiz 2 or the exam is shown.   Anyone who achieved 60 or more in all three of these elements should not be displayed.  Assign this to the “Failed Element” button. (2 marks)
+
+		li In cells J3 and J4, calculate the percentage of males who passed the course and the number of females who passed the course respectively. (2 marks)

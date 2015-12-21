@@ -1,0 +1,31 @@
+extends ../../../templates/layouts/exam
+
+block intro
+	+exam-intro('C')
+
+block content
+	p Create a database to record information about employees in your hotel.  For each employee, it should record their surname, their first name, the date they were hired, their sex, the department in which they work (Restaurant, Front Office, Administration or Other), and their annual salary.
+
+	p Your database should also have an additional calculated field that assigns each employee to categories as follows:  where they have been employed for less than one year, they should be assigned the “Trial Period” category, where they have been employed for at least one year, they should be assigned the “Permanent” category, and when they have been employed for more than 5 years they should be assigned the “Senior” category.
+
+	p Your database should have appropriate field names and you should enter two or three employees to make sure that it works properly. 
+	
+	p In addition, your user wishes you to:
+
+	ul
+
+		li Design a button (including a macro / VBA) that will sort the database so that the employees who have “Senior” status are shown first, “Permanent” second, and “Trial Period” last.  Within each subgroup (i.e. within “Permanent”), employees should be sorted so that those who have been employed longest are shown first. 
+
+		li Design a button (including a macro / VBA) that allows the user to just display those employees who have been hired in the current month (thus if you pressed the button today, it would show you a list of people hired in December 04, and only those hired in December 04. Next month it would show you people hired in January 05). 
+
+		li Design a button or buttons (including a macro / VBA) that will display only those employees who earn less than 10,000 Euros per year.  These should be sorted in ascending alphabetical order. 
+
+		li Create a button that displays a custom Userform that allows employees to be entered.  This should have a Combobox for the department and should have OK and Cancel buttons that work appropriately. 
+
+		li On Sheet3, prepare a pie chart that shows the number of employees in each status (Trial Period, Permanent or Senior), but broken down by sex.  Thus your answer should have (potentially) six segments – Permanent males, Permanent females, Senior males, Senior females, etc. 
+
+		li Create a custom function called = emailaddress( ). This should calculate the employees email address as their Surname.Firstname and add “@essec.fr” to the end. Thus someone called Fred Smith would have the email 
+			em Smith.Fred@essec.fr
+		| Demonstrate how to use this function in cell A3 of sheet3.   
+
+		li When ever sheet 3 is activated, a message box should be displayed warning the user that they need to enter their data on sheet1.

@@ -1,0 +1,18 @@
+extends ../../../../templates/layouts/quiz
+
+block intro
+	+quiz-intro('Two', 'A', '2')
+
+block content
+	ul
+		li There are TWO structural problems with the database.  Correct both of these problems by making appropriate adjustments to the structure of the database (1 Mark)
+
+		li Without using a macro, enter a formula in cell B3 that will automatically calculate the date of birth of the student whose number is entered into cell A3 (2 marks)
+
+		li Create a macro that sorts the database so that the student with the highest total grade (you need to calculate this) is shown first and the one with the lowest is shown last.  (Where two students have the same grade, it should sort the database by surname in ascending order). Assign this to the button marked “Grade” (1 mark)
+
+		li Create a macro that filters the database (in the same location) so that only students born in 1980 are showing. Create another that only shows the students born on or after this date.  Create a third that will return the database to its original state.  Assign these to the relevant buttons (2 marks)
+
+		li Create a macro that copies a list of the surnames, first names and grade in each element in the course (i.e. the two quizzes, the participation and the report) of all the students born before 1 January 1970 to a range starting at cell A30. Assign this to the “1980” button (2 marks)
+
+		li Calculate the average final grade of the male students and (separately) the female students (1 mark).

@@ -1,0 +1,48 @@
+extends ../../../../templates/layouts/exercise
+
+block intro
+	+class-exercises(5,5,2)
+	h1 Question 5.2
+	h2 Questionnaire Analysis
+
+block content
+	p
+		|	Shown below are the results of some consumer research.
+	table
+		thead
+			tr
+				td 
+					strong Sex
+				td 
+					strong Number
+		tbody
+			tr
+				td Male
+				td 89
+			tr
+				td Female
+				td 341
+	table
+		thead
+			tr
+				td 
+					strong Preferred Room Type
+				td 
+					strong Number
+		tbody
+			tr
+				td Double
+				td 23
+			tr
+				td Deluxe
+				td 189
+			tr
+				td Junior Suite
+				td 234
+			tr
+				td Suite
+				td 98
+
+	ol
+		li Draw two (separate) pie charts to illustrate the answers to both questions.  Note that the percentage figures for the chart are calculated automatically for you.
+		li Draw a third chart using the second set of data.  This should be a bar chart and should include percentage figures representing the proportion of total preferences represented by each bar.

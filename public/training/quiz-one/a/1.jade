@@ -1,0 +1,22 @@
+extends ../../../../templates/layouts/quiz
+
+block intro
+	+quiz-intro('One', 'A', '1')
+
+block content
+	h4 Design a spreadsheet that allows you to calculate the price to be quoted to anyone wanting to make a group booking at your hotel.
+
+	h4 Set up the spreadsheet so that it :
+
+	ul
+		li Allows the arrival date, departure date, and number of rooms requested for a group to be entered.
+		
+		li Calculates the length of stay.
+		
+		li You have a standard price of 50 Euros per room per night on Monday, Tuesday, Wednesday and Thursday, and a standard rate of 65 Euros on Friday, Saturday and Sunday. Note that the day of check-in determines the rate for the entire stay. So if the group checks in on a Sunday and stays for four nights, then the rate each night is 65 Euros per room per night
+
+		li However larger groups are given a discount as follows: Up to 10 rooms per night receives no discount, between 10 and 20 rooms per night receives a discount of 3% while if the booking is over 20, a discount of 5% is granted.
+
+		li Use the spreadsheet to calculate the revenue from any potential booking. Use appropriate data validation techniques to insure that this figure cannot be negative.
+
+		li Room attendants cost 120 Euros per shift and can service a maximum of 12 rooms each. Assuming that this is your only cost, calculate the profitability of accepting the booking.

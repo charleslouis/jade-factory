@@ -1,0 +1,31 @@
+extends ../../../../templates/layouts/exercise
+
+block intro
+	+class-exercises(3,8,2)
+	h1 Question 3.2
+	h2 A More Difficult = If( ) Question
+
+block content
+	p
+		|	Your bed and breakfast has only five employees, who are paid annual salaries as follows :
+	table
+		thead
+			tr
+				td Sally
+				td Jean
+				td Cecil
+				td Harry
+		tbody
+			tr
+				td 22,000
+				td 21,000
+				td 17,000
+				td 8,000
+
+	p Each has a tax free allowance of 2,000.  Tax is calculated as follows.  If the person has a taxable income below 6,000, they pay nothing.  If it’s between 6,000 and 15,000 they pay tax at 5%, and if its over 15,000 they pay tax at 7%.
+	ol
+		li Calculate each employee’s annual tax liability, gross wage and net wage.
+		li The tax rules have changes slightly.  If they earn a taxable income more than 20,000, they must now pay tax at 9%.  Change your spreadsheet appropriately.
+		li The tax free allowance has been changed to vary with their marital status.  Now , married people get an allowance of 3,000, while single people’s allowance remains at 2,000.
+		li A new allowance has been introduced to try to help increase the population.  Employees now get an additional allowance based on their number of children.  People with 1 child get 1000, with 2 get 2500, with 3 get 3900 and with 4 get 5000.  Redevelop your spreadsheet to reflect these changes.
+

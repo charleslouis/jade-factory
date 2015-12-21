@@ -1,0 +1,28 @@
+extends ../../../templates/layouts/class-main.jade
+
+block intro
+	h1 Class 1
+	p The first session is mainly introductory.  We will orientate you about the logistics of the course, how the teaching sessions and help sessions will operate, introduce the course website, what you will need to do to successfully complete the course and the teaching / learning philosophy used.  
+	p We will also start working on Microsoft Excel.  Today's objectives include understanding the structure of the spreadsheet, starting to use simple calculations, understanding automatic recalculation, copying formulae and handling percentages.
+
+	p By the next session, you should have completed all the exercises shown on the left, as well as the readings handed out in class.
+
+	h5 A useful resource.
+	p 
+		em If, for whatever reason, you do not have a copy of Microsoft Office, you can use free software easily to work on this course.  OpenOffice, from OpenOffice.org, is available in Windows, Macintosh, and Linux versions.
+
+
+block exercises-links
+	+exercises-buttons(1,6)
+
+block keypoints-links
+	ul.unstyled
+		li: a(href="keypoints/keypoints_q_1-1.pdf", target="_blank", class="reading-label") keypoints 1.1
+		li: a(href="keypoints/keypoints_q_1-2.pdf", target="_blank", class="reading-label") keypoints 1.2
+		li: a(href="keypoints/keypoints_q_1-3a.pdf", target="_blank", class="reading-label") keypoints 1.3 A
+		li: a(href="keypoints/keypoints_q_1-3b.pdf", target="_blank", class="reading-label") keypoints 1.3 B	
+		li: a(href="keypoints/keypoints_q_1-4.pdf", target="_blank", class="reading-label") keypoints 1.4
+		li: a(href="keypoints/keypoints_q_1-5.pdf", target="_blank", class="reading-label") keypoints 1.5
+		li: a(href="keypoints/keypoints_q_1-6.pdf", target="_blank", class="reading-label") keypoints 1.6	
+		li: a(href="keypoints/Comparison_Single.pdf", target="_blank", class="reading-label") Doing the comparison on a single sheet
+		li: a(href="keypoints/Comparison_Multiple.pdf", target="_blank", class="reading-label") Doing the comparison on multiple sheets	
