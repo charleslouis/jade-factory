@@ -22,7 +22,7 @@ var sass = require('gulp-sass'),
 var paths = {
 	'scripts':{
 		front: {
-			vendors: [
+			sources: [
 				'./bower_components/modernizr/modernizr.js',
 				'./bower_components/jquery/dist/jquery.js',
 				'./bower_components/jquery-placeholder/jquery.placeholder.js',
@@ -31,11 +31,8 @@ var paths = {
 				'./bower_components/foundation/js/foundation/foundation.js',
 				'./bower_components/foundation/js/foundation/foundation.dropdown.js',
 				'./bower_components/foundation/js/foundation/foundation.topbar.js',
-				'./bower_components/foundation/js/foundation/foundation.equalizer.js',
-				'./bower_components/clipboard/dist/clipboard.js'
-
+				'./public/js/custom/*.js'
 			],
-			sources: ['./public/js/custom/*.js'],
 			output: {
 				folder: './public/js/',
 				mainScriptsFile: 'scripts.js'
@@ -91,7 +88,7 @@ gulp.task('sass:build',function () {
 // ----------   JSCONCAT   -----
 // 
 gulp.task('jsconcat:dev', function() {
-  return gulp.src(paths.scripts.front.vendors, paths.scripts.front.sources)
+  return gulp.src(paths.scripts.front.sources)
 	// .pipe(jshint())
 	// .pipe(jshint.reporter(jshintReporter))
     .pipe(concat(paths.scripts.front.output.mainScriptsFile))
@@ -100,7 +97,7 @@ gulp.task('jsconcat:dev', function() {
 });
 
 gulp.task('jsconcat:build', function() {
-  return gulp.src(paths.scripts.front.vendors, paths.scripts.front.sources)
+  return gulp.src(paths.scripts.front.sources)
     .pipe(concat(paths.scripts.front.output.mainScriptsFile))
     .pipe(uglify())
     .pipe(gulp.dest(paths.scripts.front.output.folder));
