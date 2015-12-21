@@ -1,12 +1,13 @@
 {
-  "name": "excel2016",
-  "description": "Excel 2016 Bower.json",
+  "name": "Jade factory project",
+  "description": "jade factory Bower.json",
   "main": "",
   "authors": [
-    "Charles-Louis Allizard"
+    "Charles-Louis Allizard",
+    "Krischamp"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/charleslouis/excel2015",
+  "homepage": "https://github.com/charleslouis/jade-factory",
   "moduleType": [],
   "ignore": [
     "**/.*",

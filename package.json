@@ -1,7 +1,7 @@
 {
-  "name": "excel2016",
+  "name": "jade-factory",
   "version": "0.0.1",
-  "repository": "https://github.com/charleslouis/excel2015",
+  "repository": "https://github.com/charleslouis/jade-factory",
   "private": true,
   "dependencies": {
     "async": "^1.4.2",

@@ -32,9 +32,8 @@ var paths = {
 				'./bower_components/foundation/js/foundation/foundation.dropdown.js',
 				'./bower_components/foundation/js/foundation/foundation.topbar.js',
 				'./bower_components/foundation/js/foundation/foundation.equalizer.js',
-				'./bower_components/clipboard/dist/clipboard.js',
-				'./public/js/custom/copy-clipboard.js',
-				'./public/js/custom/test.js'
+				'./bower_components/clipboard/dist/clipboard.js'
+
 			],
 			sources: ['./public/js/custom/*.js'],
 			output: {
