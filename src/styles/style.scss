@@ -1,8 +1,8 @@
-@import 'foundation/settings';
 @import 'foundation/foundation';
+@include foundation-everything;
 
 // Custom styles
 @import 'custom/helpers';
-@import 'custom/footer';
-@import 'custom/layout';
-@import 'custom/type';
+// @import 'custom/footer';
+// @import 'custom/layout';
+// @import 'custom/type';

@@ -19,6 +19,7 @@
     "foundation": "~5.5.3"
   },
   "dependencies": {
-    "clipboard": "~1.5.5"
+    "clipboard": "~1.5.5",
+    "foundation-sites": "~6.0.6"
   }
 }

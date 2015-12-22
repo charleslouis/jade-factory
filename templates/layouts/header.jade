@@ -3,26 +3,21 @@
 //- ... or completely change this header to suit your design.
 .fixed
 	nav.top-bar(data-topbar, role='navigation')
-		ul.title-area
+		ul#main-menu.menu
 			li.name
-				h1
-					a(href='/') Home		
-			li.toggle-topbar.menu-icon
-				a(href='#')
-					span Menu
-		section.top-bar-section
-			ul.right
-				li.has-dropdown.not-click
-					a(href="#") Projects
+				a(href='/') Home
+		ul.menu.align-right.dropdown(data-dropdown-menu)
+			li
+				a(href="#") Projects
 
-					- var projectNumber = 1
-					ul.dropdown
-						while projectNumber < 3
-							li
-								a(href='/projects/' + projectNumber + '/index.html')='Project ' + projectNumber++
-			ul.left
-				li
-					a(href="/about.html") About
-				li
-					a(href="/contact.html") Contact
+				- var projectNumber = 1
+				ul.menu
+					while projectNumber < 3
+						li
+							a(href='/projects/' + projectNumber + '/index.html')='Project ' + projectNumber++
+		ul.menu.align-right
+			li
+				a(href="/about.html") About
+			li
+				a(href="/contact.html") Contact
 					
