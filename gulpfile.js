@@ -5,9 +5,8 @@ var gulp = require('gulp');
 var jshint = require('gulp-jshint'),
 	jshintReporter = require('jshint-stylish'),
 	watch = require('gulp-watch'),
-	shell = require('gulp-shell');
-
-var sass = require('gulp-sass'),
+	shell = require('gulp-shell'),
+	sass = require('gulp-sass'),
     minifycss = require('gulp-minify-css'),
     rename = require('gulp-rename'),
     sourcemaps = require('gulp-sourcemaps'),
@@ -16,7 +15,8 @@ var sass = require('gulp-sass'),
     uglify = require('gulp-uglify'),
     connect = require('gulp-autoprefixer'),
     connect = require('gulp-connect'),
-    jade = require('gulp-jade');
+    jade = require('gulp-jade'),
+    del = require('del');
 
 
 var paths = {
@@ -31,29 +31,30 @@ var paths = {
 				'./bower_components/foundation/js/foundation/foundation.js',
 				'./bower_components/foundation/js/foundation/foundation.dropdown.js',
 				'./bower_components/foundation/js/foundation/foundation.topbar.js',
-				'./public/js/custom/*.js'
+				'./bower_components/foundation/js/foundation/foundation.equalizer.js',
+				'./bower_components/clipboard/dist/clipboard.js',
+				'./src/js/custom/copy-clipboard.js',
+				'./src/js/custom/*.js'
 			],
 			output: {
-				folder: './public/js/',
+				folder: './src/js/',
 				mainScriptsFile: 'scripts.js'
 			}
 		}
 	},
 	'style': {
-		all: './public/styles/**/*.scss',
-		output: './public/styles/'
+		all: './src/styles/**/*.scss',
+		output: './src/styles/'
 	},
 	'jadeFiles': {
 		templates: [
-			'./public/**/*.jade',
+			'./src/**/*.jade',
 		]
 	},
 	'html': {
-		distFolder: './public/',
-		distFiles: './public/**/*.html'
-	}	
-
-
+		distFolder: './src/',
+		distFiles: './src/**/*.html'
+	}
 };
 
 
@@ -119,7 +120,7 @@ gulp.task('jadeHtml', function() {
 gulp.task('server:start', function() {
   connect.server({
     port: 8000,
-    root: './public',
+    root: './src',
   });
   // server close ?
 });
@@ -160,6 +161,32 @@ gulp.task('watch', [
   'watch:js',
   'watch:jadeHtml'
 ]);
+
+
+//-----------   CLEAN   ---------------------
+gulp.task('cleaning', function () {
+  return del([
+    'dist/**'
+  ]);
+});
+
+//-----------   COPY   ---------------------
+gulp.task('copy', ['cleaning'], function() {
+	gulp.src([
+		'./src/**/*.html', 
+		'./src/**/scripts.js',
+		'./src/**/style.css',
+		'./src/**/*.png',
+		'./src/**/*.jpg',
+		'./src/**/*.svg',
+		'./src/.htaccess'
+	])
+	.pipe(gulp.dest('./dist'));
+	gulp.src([
+		'./src/reveal/**/*',
+	])
+	.pipe(gulp.dest('./dist/reveal'));	
+});
 
 
 // ----------   RUN tasks   ------------------
