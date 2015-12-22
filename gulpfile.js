@@ -119,7 +119,7 @@ gulp.task('jadeHtml', function() {
 //-----------   SERVER   ---------------------
 gulp.task('server:start', function() {
   connect.server({
-    port: 8001,
+    port: 8000,
     root: './src',
   });
   // server close ?
