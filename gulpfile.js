@@ -119,7 +119,7 @@ gulp.task('jadeHtml', function() {
 //-----------   SERVER   ---------------------
 gulp.task('server:start', function() {
   connect.server({
-    port: 8000,
+    port: 8001,
     root: './src',
   });
   // server close ?
@@ -190,10 +190,12 @@ gulp.task('copy', ['cleaning'], function() {
 
 
 // ----------   RUN tasks   ------------------
-// gulp run Keystone
-// gulp.task('runKeystone', shell.task('node keystone.js'));
 
 // default task (watch & serve)
-
 gulp.task('serve', ['server:start', 'watch'],function () {
 });
+
+// dist task to deploy
+gulp.task('dist', ['jsconcat:build', 'jadeHtml', 'sass:build', 'copy'],function () {
+});
+
